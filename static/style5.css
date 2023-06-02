@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+    background-image: url(./bg5.jpg);
+    background-repeat: no-repeat;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;
+    /* 让背景图基于容器大小伸缩 */
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+
+h1{
+    text-align: center;
+    padding-top: 30px;
+    color: #d20a0a;
+}
+p{
+    text-align: center;
+    padding-top: 20px;
+    color: #da3434;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.container{
+    width: 800px;
+    margin: 10% auto;
+    /*居中*/
+    border-radius: 50px;
+    /*四个角*/
+    background-color: rgba(0, 0, 0, 0.1);
+    /* 阴影 */
+    box-shadow: 0 0 17px #333;
+    /*外缘阴影*/
+}

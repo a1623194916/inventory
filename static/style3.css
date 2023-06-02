@@ -1,0 +1,67 @@
+body{
+    font-family: sans-serif;
+    background-image: url(./bg2.jpg);
+    background-color: #e2e7ee;
+ 
+    overflow: hidden;
+    background-size: cover;
+}
+
+.container{
+    width: 600px;
+    margin: 10% auto;
+    /*居中*/
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* 阴影 */
+    box-shadow: 0 0 17px #333;
+    /*外缘阴影*/
+}
+
+.header{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header h1{
+    color: #333;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+.main{
+    text-align: center;
+}
+
+.main button{
+    width: 200px;
+    height: 40px;
+    
+    border: none;
+    /* 选中的时候的边框提醒去掉 */
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #151313;
+    margin-bottom: 400px;
+}
+ 
+
+.main button{
+    padding-left: 0;
+    background-color: #83acf1;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+/*选中加背景颜色*/
+.main button:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #7798d4;
+}
+.main input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #ddd;
+}
+

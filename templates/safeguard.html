@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>备份</title>
+    <link rel="stylesheet" href="/static/style3.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>备份注意事项</h1>
+      </div>
+      <div class="main">
+        <form method="post">
+          {% csrf_token %}
+          <p>点击下方按钮对当前数据库进行备份</p>
+          <p>注意：若出现无法备份情况请检查当前备份数是否超出上限</p>
+          <p>若出现上述情况，请删除部分备份数据并再次尝试备份</p>
+          <button type="submit" name="action" value="backup">我已确认并备份</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

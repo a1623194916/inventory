@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="/static/style.css">  
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>注 册</h1>
+            <a href="{% url 'admin:index' %}">已有账号？点击登录</a>
+                </div>
+        <div class="main">
+            <form method="post">
+                {% csrf_token %}
+                <span>
+                    <input type="text" id="username" name="username" required placeholder="账号">
+                </span><br>
+                <span>
+                    <input type="password" id="password1" name="password1" required placeholder="密码">
+                </span><br>
+                <span>
+                    <input type="password" id="password2" name="password2"  required placeholder="确认密码">
+                </span><br>
+                {% comment %} <span>
+                    <input type="text" id="first_name" name="first_name" placeholder="姓氏">
+                </span><br>
+                <span>
+                    <input type="text" id="first_name" name="last_name" placeholder="名字">
+                </span><br> {% endcomment %}
+                <button type="submit" id="register">注 册</button>
+            </form>
+        </div>
+    </div>  
+</body>
+</html>

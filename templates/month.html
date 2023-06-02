@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html land="zh-hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      
+{{year}}年{{month}}月报表      
+    </title>
+    <link rel="stylesheet" href="/static/style4.css"> 
+    
+  </head>
+  <body>
+    <div class="container">
+      
+      <form method="post">
+        {% csrf_token %}
+        
+          
+        <br> </br>
+        <h1>{{year}}年{{month}}月月底结存   </h1>
+        
+
+
+        <h2>物料库存</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>物料序号</th>
+              <th>物料名字</th>
+              
+              <th>物料价格</th>
+              <th>最大库存</th>
+              <th>最小库存</th>
+              <th>现有库存</th>
+              <th>物料描述</th>
+              <th>物料时间</th>
+              <th>供应商</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for material in materials %}
+              <tr>
+                <td>{{ material.Mnumber }}</td>
+                <td>{{ material.Mname }}</td>
+                
+                <td>{{ material.Price }}</td>
+                <td>{{ material.Max_inventory }}</td>
+                <td>{{ material.Min_inventory }}</td>
+                <td>{{ material.Now_inventory }}</td>
+                <td>{{ material.Description }}</td>
+                <td>{{ material.Now_datetime }}</td>
+                <td>{{ material.Supplier }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+        <h2>入库记录</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>入库编号</th>
+              <th>物料序号</th>
+              <th>入库来源</th>
+              <th>入库时间</th>
+              <th>入库供应商</th>
+              <th>入库库存</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for in_storage in in_storages %}
+              <tr>
+                <td>{{ in_storage.In_number }}</td>
+                <td>{{ in_storage.Mnumber }}</td>
+                <td>{{ in_storage.Source }}</td>
+                <td>{{ in_storage.In_date }}</td>
+                <td>{{ in_storage.In_supplier }}</td>
+                <td>{{ in_storage.In_inventory }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+        <h2>出库记录</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>出库编号</th>
+              <th>物料序号</th>
+              <th>出库方式</th>
+              <th>出库时间</th>
+              <th>出库供应商</th>
+              <th>出库库存</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in out_storage %}
+              <tr>
+                <td>{{ item.Out_number }}</td>
+                <td>{{ item.Mnumber }}</td>
+                <td>{{ item.Out_way }}</td>
+                <td>{{ item.Out_date }}</td>
+                <td>{{ item.Out_supplier }}</td>
+                <td>{{ item.Out_inventory }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      
+        <button type="submit" name="action" value="export">打印报表</button>
+      </form>
+
+
+      <div class="main1">
+        <form method="post">
+          {% csrf_token %}
+            <span>
+                <input type="text" name="year" required placeholder="请输入年份">
+            </span><br>
+            <span>
+                <input type="text" name="month" required placeholder="请输入月份">
+            </span><br>
+  
+            <button type="submit" name="action" value="search">确认查询</button>
+        </form>
+      </div>
+
+      {% comment %} <div class="main2">
+        <form >
+            <span>
+                <input type="text" placeholder="请输入物料编号">
+            </span><br>
+            <span>
+                <input type="text" placeholder="请输入物料名称">
+            </span><br>
+  
+            <button>确认查询</button>
+        </form>
+      </div> {% endcomment %}
+
+        
+    </div>
+  </body>
+</html>

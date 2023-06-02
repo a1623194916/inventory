@@ -1,0 +1,75 @@
+* {
+	/* 页面初始化 清除元素的内外边距 */
+	padding: 0;
+	margin: 0;
+	/* 盒子模型 */
+	box-sizing: border-box;
+}
+body {
+	/* 弹性布局 让页面元素垂直+水平居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 让页面高度占浏览器可视区域的高度 */
+	height: 100vh;
+	background-color: #ccd4dd;
+}
+.container {
+	/* 溢出隐藏 */
+	overflow: hidden;
+	/* 外边距 上下为0  左右为20px */
+	margin: 0 20px;
+	background-color: #fff;
+	/* 盒子阴影 */
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+.container table {
+	/* 让表格的边框合并在一起 */
+	border-collapse: collapse;
+}
+.container table thead tr th {
+	color: #fff;
+	background-color: #4fc3a1;
+}
+/* 取单数 */
+.container table thead tr th:nth-child(odd) {
+	background-color: #324960;
+}
+.container table thead tr th,
+.container table tbody tr td {
+	text-align: center;
+	padding: 20px 40px;
+}
+.container table tbody tr td {
+	border: 1px solid rgb(200, 200, 200);
+}
+.container table tbody tr:nth-child(odd) {
+	background-color: #f8f8f8;
+}
+
+.main button{
+    width: 60px;
+    height: 40px;
+    /* 边框消失 */
+    border: none;
+    /* 选中的时候的边框提醒去掉 */
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.main button{
+    padding-left: 0;
+    background-color: #83acf1;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+/*选中加背景颜色*/
+.main button:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #7798d4;
+}
