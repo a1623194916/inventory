@@ -60,35 +60,32 @@ pip install -r requirements.txt
 
 ## ***\*物料初始化界面\****
 
-![输入图片说明](https://foruda.gitee.com/images/1685868162844280980/cfe66d92_12707783.png "屏幕截图")
-![输入图片说明](https://foruda.gitee.com/images/1685868175653217907/5ab71715_12707783.png "屏幕截图")
- 
+![image](https://github.com/a1623194916/inventory/assets/43876825/8f2b9034-8c8b-46ca-b9e4-8466527f9836)
+![image](https://github.com/a1623194916/inventory/assets/43876825/b70ed265-7ecc-4af6-b045-2d2cd7ea9f2d) 
 
  
 
 ## ***\*出库功能界面\****
 
-![输入图片说明](https://foruda.gitee.com/images/1685868183422960180/e382b573_12707783.png "屏幕截图")
-![输入图片说明](https://foruda.gitee.com/images/1685868190013367576/3bd31fcd_12707783.png "屏幕截图")
+![image](https://github.com/a1623194916/inventory/assets/43876825/5abe57a1-654d-4296-8b08-18dc36475af5)![输入图片说明]![image](https://github.com/a1623194916/inventory/assets/43876825/d2dc73ba-7035-48ec-9e0a-318cd7e08014)
 
 ## ***\*入库功能界面\****
 
-![输入图片说明](https://foruda.gitee.com/images/1685868198735624415/0f343085_12707783.png "屏幕截图")
-![输入图片说明](https://foruda.gitee.com/images/1685868211382064135/6c839eb9_12707783.png "屏幕截图")
+![image](https://github.com/a1623194916/inventory/assets/43876825/41316e5b-490a-45c4-a6bc-4b50ba31e205)
+![image](https://github.com/a1623194916/inventory/assets/43876825/0a0e87df-0ccc-4570-9d97-4d92af4b5838)
 
 ## ***\*物料盘点功能界面\****
 
-![输入图片说明](https://foruda.gitee.com/images/1685868216856220946/d938c0e1_12707783.png "屏幕截图")
-![输入图片说明](https://foruda.gitee.com/images/1685868224654026461/5c041df5_12707783.png "屏幕截图")
+![image](https://github.com/a1623194916/inventory/assets/43876825/17b669ff-015e-4ade-958a-55cf32e9fa5c)
+![image](https://github.com/a1623194916/inventory/assets/43876825/211f5a29-defe-44cf-9ded-c9ecc40223bc)
+
  
 
  
 
 ## ***\*月底结存功能界面\****
-![输入图片说明](https://foruda.gitee.com/images/1685868234185306799/5278b42e_12707783.png "屏幕截图")
-
+![image](https://github.com/a1623194916/inventory/assets/43876825/bd45411f-d76f-4b05-9613-41c95082349d)
 
 ## ***\*安全管理功能界面\****
 
-![输入图片说明](https://foruda.gitee.com/images/1685868244479046189/7fc96e84_12707783.png "屏幕截图")
-![输入图片说明](https://foruda.gitee.com/images/1685868255776053475/92960e6a_12707783.png "屏幕截图")
+![image](https://github.com/a1623194916/inventory/assets/43876825/a8fa8cb9-17d4-44d5-aa93-4f0e161d27d2)![输入图片说明![image](https://github.com/a1623194916/inventory/assets/43876825/5651d61f-375a-4429-a782-33bcbee6a55b)
